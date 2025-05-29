@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables
+
 import 'package:flutter/material.dart';
 import 'package:newzler/customWidgets/custom_input_field.dart';
 import 'package:newzler/customWidgets/custom_text_style.dart';
@@ -17,7 +19,6 @@ class _ForgetPasswordState extends State<ForgetPassword> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     emailController.addListener(() {
@@ -55,7 +56,8 @@ class _ForgetPasswordState extends State<ForgetPassword> {
 
               SizedBox(height: 20),
               MainButton(
-                text: "Update",
+                text: "Recover",
+                fontSize: 18,
                 onPressed: () {
                   if (emailController.text.isEmpty) {
                     ScaffoldMessenger.of(
@@ -73,6 +75,13 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 buttonHeight: 61,
                 buttonWidth: 335,
                 borderRadius: 50,
+                leadingIcon: Image.asset(
+                  "assets/images/recycle.png",
+                  width: 20,
+                  height: 20,
+                  fit: BoxFit.contain,
+                ),
+                spaceBetweenTextAndImage: 0,
               ),
             ],
           ),

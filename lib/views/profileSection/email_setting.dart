@@ -17,7 +17,6 @@ class _EmailSettingState extends State<EmailSetting> {
   bool _isContinueLoading = false;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     confirmCodeController.addListener(() {
       setState(() {});

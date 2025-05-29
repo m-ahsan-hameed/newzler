@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newzler/const/colors.dart';
 import 'package:newzler/customWidgets/main_button.dart';
-import 'package:newzler/views/onboarding/on_boarding_slider.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});

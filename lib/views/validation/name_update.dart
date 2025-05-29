@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:newzler/customWidgets/custom_input_field.dart';
 import 'package:newzler/customWidgets/custom_text_style.dart';

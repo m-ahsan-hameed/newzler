@@ -17,7 +17,6 @@ class _EmailConfirmationState extends State<EmailConfirmation> {
   bool _isContinueLoading = false;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     confirmCodeController.addListener(() {
       setState(() {});

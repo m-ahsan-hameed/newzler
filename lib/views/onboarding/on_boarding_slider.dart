@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:newzler/const/colors.dart';
@@ -80,7 +82,7 @@ class OnBoardingSlider extends StatelessWidget {
               child: MainButton(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
-                leadingIcon: FontAwesomeIcons.solidEnvelope,
+                leadingIcon: Icon(FontAwesomeIcons.solidEnvelope),
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
                 text: "Continue With Email",

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison
+
 import 'package:flutter/material.dart';
 import 'package:newzler/const/colors.dart';
 
@@ -12,7 +14,7 @@ class MainButton extends StatelessWidget {
   final FontWeight fontWeight;
   final String fontFamily;
   final Color elevationColor;
-  final IconData? leadingIcon;
+  final Widget leadingIcon;
   final Color? iconColor;
   final double iconSize;
   final MainAxisAlignment mainAxisAlignment;
@@ -23,6 +25,7 @@ class MainButton extends StatelessWidget {
   final Color borderColor;
   final Widget spinnerWidget;
   final bool isLoading;
+  final double spaceBetweenTextAndImage;
   const MainButton({
     super.key,
     required this.text,
@@ -35,7 +38,7 @@ class MainButton extends StatelessWidget {
     this.fontWeight = FontWeight.w700,
     this.fontFamily = "Raleway",
     this.elevationColor = mainColor,
-    this.leadingIcon,
+    this.leadingIcon = const SizedBox(),
     this.iconColor,
     this.iconSize = 25,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -46,6 +49,7 @@ class MainButton extends StatelessWidget {
     this.buttonWidth,
     this.spinnerWidget = const SizedBox(),
     this.isLoading = false,
+    this.spaceBetweenTextAndImage = 8,
   });
 
   @override
@@ -77,8 +81,8 @@ class MainButton extends StatelessWidget {
           mainAxisAlignment: mainAxisAlignment,
           children: [
             if (leadingIcon != null) ...[
-              Icon(leadingIcon, color: iconColor, size: iconSize),
-              const SizedBox(width: 8),
+              leadingIcon,
+              SizedBox(width: spaceBetweenTextAndImage),
             ],
             isLoading ? spinnerWidget : Text(text),
           ],

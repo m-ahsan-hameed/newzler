@@ -6,7 +6,7 @@ import 'package:newzler/customWidgets/main_button.dart';
 import 'package:string_validator/string_validator.dart';
 
 class ForgetUsername extends StatefulWidget {
-  ForgetUsername({super.key});
+  const ForgetUsername({super.key});
 
   @override
   State<ForgetUsername> createState() => _ForgetUsernameState();
@@ -17,7 +17,6 @@ class _ForgetUsernameState extends State<ForgetUsername> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     emailController.addListener(() {
@@ -55,7 +54,8 @@ class _ForgetUsernameState extends State<ForgetUsername> {
 
               SizedBox(height: 20),
               MainButton(
-                text: "Update",
+                text: "Recover",
+                fontSize: 18,
                 onPressed: () {
                   if (emailController.text.isEmpty) {
                     ScaffoldMessenger.of(
@@ -73,6 +73,12 @@ class _ForgetUsernameState extends State<ForgetUsername> {
                 buttonHeight: 61,
                 buttonWidth: 335,
                 borderRadius: 50,
+                leadingIcon: Image.asset(
+                  "assets/images/recycle.png",
+                  width: 25,
+                  fit: BoxFit.contain,
+                ),
+                spaceBetweenTextAndImage: 0,
               ),
             ],
           ),
