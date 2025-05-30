@@ -37,6 +37,7 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   font_awesome_flutter: ^10.8.0
   string_validator: ^1.1.0
+  dropdown_button2: ^2.3.9
 
 dev_dependencies:
   flutter_test:

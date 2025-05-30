@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newzler/const/colors.dart';
 import 'package:newzler/customWidgets/custom_text_style.dart';
-import 'package:newzler/model/profile_model.dart';
+import 'package:newzler/models/profile_model.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
