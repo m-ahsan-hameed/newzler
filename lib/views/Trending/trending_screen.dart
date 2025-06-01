@@ -39,7 +39,7 @@ class _TrendingScreenState extends State<TrendingScreen> {
       itemBuilder: (context, i) {
         return Column(
           children: [
-            Image.asset(trendingData[i].newsImagePath),
+            Image.asset(trendingData[i].newsImagePath!),
             SizedBox(height: 20),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +61,7 @@ class _TrendingScreenState extends State<TrendingScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomTextStyle(
-                        text: trendingData[i].newsText,
+                        text: trendingData[i].newsText!,
                         size: 17,
                         lineHeight: 1.2,
                       ),
@@ -69,7 +69,7 @@ class _TrendingScreenState extends State<TrendingScreen> {
                       Row(
                         children: [
                           CustomTextStyle(
-                            text: trendingData[i].uploadTime,
+                            text: trendingData[i].uploadTime!,
                             size: 10,
                           ),
                           CustomTextStyle(text: " | ", size: 10),

@@ -40,7 +40,7 @@ class _FullCoverageState extends State<FullCoverage> {
       itemBuilder: (context, i) {
         return Column(
           children: [
-            Image.asset(trendingData[i].newsImagePath),
+            Image.asset(trendingData[i].newsImagePath!),
             SizedBox(height: 20),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,7 +49,7 @@ class _FullCoverageState extends State<FullCoverage> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(80),
                     child: Image.asset(
-                      "assets/images/trending/newsLogo.png",
+                      trendingData[i].channelLogoPath,
                       height: 38,
                       width: 38,
                     ),
@@ -62,7 +62,7 @@ class _FullCoverageState extends State<FullCoverage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomTextStyle(
-                        text: trendingData[i].newsText,
+                        text: trendingData[i].newsText!,
                         size: 17,
                         lineHeight: 1.2,
                       ),
@@ -70,7 +70,7 @@ class _FullCoverageState extends State<FullCoverage> {
                       Row(
                         children: [
                           CustomTextStyle(
-                            text: trendingData[i].uploadTime,
+                            text: trendingData[i].uploadTime!,
                             size: 10,
                           ),
                           CustomTextStyle(text: " | ", size: 10),
