@@ -8,7 +8,7 @@ class CustomTextStyle extends StatelessWidget {
   final TextAlign? textAlign;
   final FontWeight fontWeight;
   final String fontFamily;
-
+  final double? lineHeight;
   const CustomTextStyle({
     super.key,
     required this.text,
@@ -17,6 +17,7 @@ class CustomTextStyle extends StatelessWidget {
     this.textAlign,
     this.fontWeight = FontWeight.w700,
     this.fontFamily = "Raleway",
+    this.lineHeight,
   });
 
   @override
@@ -27,6 +28,7 @@ class CustomTextStyle extends StatelessWidget {
       softWrap: true,
       overflow: TextOverflow.visible,
       style: TextStyle(
+        height: lineHeight,
         fontSize: size,
         fontWeight: fontWeight,
         fontFamily: fontFamily,

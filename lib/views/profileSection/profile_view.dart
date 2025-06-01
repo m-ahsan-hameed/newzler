@@ -62,7 +62,7 @@ class _ProfileViewState extends State<ProfileView> {
       backgroundColor: Colors.grey,
       backgroundImage: _imagePicked != null
           ? FileImage(_imagePicked!)
-          : AssetImage("assets/images/facebook.png"),
+          : AssetImage("assets/images/profile_user.png"),
     );
   }
 
