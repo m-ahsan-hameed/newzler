@@ -57,7 +57,7 @@ class _NewsScreen1State extends State<NewsScreen1> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(81),
                 child: Image.asset(
-                  newsChannelList[i].channelLogoPath,
+                  newsChannelList[i].channelLogoPath!,
                   height: 50,
                   width: 50,
                   fit: BoxFit.contain,
@@ -98,7 +98,7 @@ class _NewsScreen1State extends State<NewsScreen1> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(80),
                     child: Image.asset(
-                      videosList[i].channelLogoPath,
+                      videosList[i].channelLogoPath!,
                       height: 38,
                       width: 38,
                     ),

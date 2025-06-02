@@ -1,16 +1,14 @@
-import 'package:flutter/widgets.dart';
-
 class NewsModel {
   String? newsImagePath;
   String? newsText;
-  String channelLogoPath;
+  String? channelLogoPath;
   String? uploadTime;
   String newsChannelName;
 
   NewsModel({
     this.newsImagePath,
     this.newsText,
-    required this.channelLogoPath,
+    this.channelLogoPath,
     required this.newsChannelName,
     this.uploadTime,
   });
@@ -89,6 +87,45 @@ List<NewsModel> videosList = [
     channelLogoPath: "assets/images/trending/newsLogo.png",
     newsText:
         "A protester carries the Confederate flag after breaching US Captical security",
+    uploadTime: "5 Hours Ago",
+  ),
+];
+
+List<NewsModel> videoPlayerList = [
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
+    uploadTime: "5 Hours Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
+    uploadTime: "5 Hours Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
+    uploadTime: "5 Hours Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
+    uploadTime: "5 Hours Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
+    uploadTime: "5 Hours Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/images/videoList.png",
+    newsChannelName: "News18",
+    newsText: "Meet the woman behind India’s best bar",
     uploadTime: "5 Hours Ago",
   ),
 ];

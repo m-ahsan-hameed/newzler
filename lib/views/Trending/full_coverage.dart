@@ -49,7 +49,7 @@ class _FullCoverageState extends State<FullCoverage> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(80),
                     child: Image.asset(
-                      trendingData[i].channelLogoPath,
+                      trendingData[i].channelLogoPath!,
                       height: 38,
                       width: 38,
                     ),

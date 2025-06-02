@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newzler/views/Trending/full_coverage.dart';
-import 'package:newzler/views/Trending/trending_screen.dart';
-import 'package:newzler/views/videoScreens/news_Screen2.dart';
-import 'package:newzler/views/videoScreens/news_screen1.dart';
+import 'package:newzler/views/searchViews/search_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Newzler',
-      home: NewsScreen2(),
+      home: SearchView(),
     );
   }
 }
