@@ -1,8 +1,9 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:newzler/const/colors.dart';
 import 'package:newzler/customWidgets/custom_text_style.dart';
 import 'package:newzler/customWidgets/main_button.dart';
-import 'package:newzler/functions/common_functions.dart';
 import 'package:newzler/models/account_screen_model.dart';
 
 class AccountScreen extends StatelessWidget {
