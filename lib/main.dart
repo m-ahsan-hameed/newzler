@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newzler/views/searchViews/search_view.dart';
+import 'package:newzler/views/account/account_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Newzler',
-      home: SearchView(),
+      home: AccountScreen(),
     );
   }
 }

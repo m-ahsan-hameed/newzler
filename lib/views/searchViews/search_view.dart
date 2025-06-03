@@ -45,7 +45,7 @@ class _SearchViewState extends State<SearchView> {
             SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Expanded(child: _recentSearches()),
+              child: _recentSearches(),
             ),
 
             SizedBox(height: 20),
