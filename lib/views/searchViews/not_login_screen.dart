@@ -36,6 +36,7 @@ class _NotLoginScreenState extends State<NotLoginScreen> {
                   "Create an account or login to Newzler to continue.",
                   () {},
                   () {},
+                  50,
                 )
               else
                 CustomTextStyle(text: _endOfList(), size: 16.5),

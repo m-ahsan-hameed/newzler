@@ -129,3 +129,45 @@ List<NewsModel> videoPlayerList = [
     uploadTime: "5 Hours Ago",
   ),
 ];
+
+List<NewsModel> myBookMarkLists = [
+  NewsModel(
+    newsImagePath: "assets/bookmark/ddonald.png",
+    newsChannelName: "News18",
+    newsText:
+        "Covid:Dr Scott Atlas - Trum’s controversial conronavirus adviser- resigns",
+    uploadTime: "4 minutes Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/bookmark/singer.png",
+    newsChannelName: "News18",
+    newsText: "UNS 1st  December 1945 - Singer Better Midler",
+    uploadTime: "4 minutes Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/bookmark/ddonald.png",
+    newsChannelName: "News18",
+    newsText:
+        "Covid:Dr Scott Atlas - Trum’s controversial conronavirus adviser- resigns",
+    uploadTime: "4 minutes Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/bookmark/singer.png",
+    newsChannelName: "News18",
+    newsText: "UNS 1st  December 1945 - Singer Better Midler",
+    uploadTime: "4 minutes Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/bookmark/ddonald.png",
+    newsChannelName: "News18",
+    newsText:
+        "Covid:Dr Scott Atlas - Trum’s controversial conronavirus adviser- resigns",
+    uploadTime: "4 minutes Ago",
+  ),
+  NewsModel(
+    newsImagePath: "assets/bookmark/singer.png",
+    newsChannelName: "News18",
+    newsText: "UNS 1st  December 1945 - Singer Better Midler",
+    uploadTime: "4 minutes Ago",
+  ),
+];
